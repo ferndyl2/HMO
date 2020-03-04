@@ -12,6 +12,10 @@
 */
 Route::resource('itemfiles','ItemfilesController');
 Route::resource('doctorfiles','DoctorfilesController');
+Route::resource('companyfiles', 'CompanyFilesController');
+Route::get('homepage', function() {
+    return view('homepage');
+});
 Route::get('/', function () {
     return view('welcome');
 });
