@@ -15,7 +15,7 @@ class CreateDoctorfilesTable extends Migration
     {
         Schema::create('doctorfiles', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->text('doctors_code');
+            $table->integer('doctors_code');
             $table->string('last_name');
             $table->string('first_name');
             $table->string('middle_initial');

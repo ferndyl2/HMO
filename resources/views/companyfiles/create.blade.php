@@ -1,6 +1,6 @@
-@extends('doctorfiles.layout')
+@extends('companyfiles.layout')
 
-@section('content2')
+@section('content3')
 <div class="row">
     <div class="col-lg-12 margin-tb">
         <div class="pull-left">
@@ -27,42 +27,42 @@
 
    
 
-<form action="{{ route('doctorfiles.store') }}" method="POST">
+<form action="{{ route('companyfiles.store') }}" method="POST">
 
     @csrf
      <div class="row">
         <div class="col-xs-8 col-sm-8 col-md-8">
             <div class="form-group">
-                <strong>Doctors Code:</strong>
-                <input type="text" name="doctors_code" class="form-control" placeholder="Enter Code">
+                <strong>HMO Code:</strong>
+                <input type="text" name="hmo_code" class="form-control" placeholder="Enter Code">
             </div>
         </div>
 
         <div class="col-xs-8 col-sm-8 col-md-8">
             <div class="form-group">
-                <strong>Last Name:</strong>
-                <input type="text" name="last_name" class="form-control" placeholder="Enter Last Name">
+                <strong>HMO Description:</strong>
+                <input type="text" name="hmo_desc" class="form-control" placeholder="Enter Description">
             </div>
         </div>
 
         <div class="col-xs-8 col-sm-8 col-md-8">
             <div class="form-group">
-                <strong>First Name:</strong>
-                <input type="text" name="first_name" class="form-control" placeholder="Enter First Name">
+                <strong>HMO SFX:</strong>
+                <input type="text" name="hmo_sfx" class="form-control" placeholder="Enter Input">
             </div>
         </div>
 
         <div class="col-xs-8 col-sm-8 col-md-8">
             <div class="form-group">
-                <strong>Middle Initial:</strong>
-                <input type="text" name="middle_initial" class="form-control" placeholder="Enter Middle Initial">
+                <strong>HMO Status:</strong>
+                <input type="text" name="hmo_status" class="form-control" placeholder="Enter Status">
             </div>
         </div>
 
         <div class="col-xs-8 col-sm-8 col-md-8">
             <div class="form-group">
-                <strong>Specialty:</strong>
-                <input type="text" name="specialty" class="form-control" placeholder="Enter Specialty">
+                <strong>Credit Limit:</strong>
+                <input type="text" name="credit_limit" class="form-control" placeholder="Enter Limit">
             </div>
         </div>
 

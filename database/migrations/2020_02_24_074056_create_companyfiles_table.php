@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateItemfilesTable extends Migration
+class CreateCompanyfilesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,13 @@ class CreateItemfilesTable extends Migration
      */
     public function up()
     {
-        Schema::create('itemfiles', function (Blueprint $table) {
+        Schema::create('companyfiles', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('id_no');
-            $table->text('item_description');
+            $table->integer('hmo_code');
+            $table->text('hmo_desc');
+            $table->text('hmo_sfx');
+            $table->text('hmo_status');
+            $table->integer('credit_limit');
             $table->timestamps();
         });
     }
@@ -28,6 +31,6 @@ class CreateItemfilesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('itemfiles');
+        Schema::dropIfExists('companyfiles');
     }
 }

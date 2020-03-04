@@ -9,16 +9,16 @@
 
             <div class="pull-left">
 
-                <h2>Laravel 5.7 CRUD Example from scratch - ItSolutionStuff.com</h2>
+                <h2 style="text-align:center">Adventist Medical Center Manila</h2>
 
             </div>
 
             <div class="pull-right">
 
-                <a class="btn btn-success" href="{{ route('itemfiles.create') }}"> Create New Product</a>
+                <a class="btn btn-success" href="{{ route('itemfiles.create') }}"> Create New Item</a>
 
             </div>
-
+        <br>
         </div>
 
     </div>

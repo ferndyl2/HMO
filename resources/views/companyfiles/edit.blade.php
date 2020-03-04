@@ -1,8 +1,8 @@
-@extends('doctorfiles.layout')
+@extends('companyfiles.layout')
 
    
 
-@section('content2')
+@section('content3')
 
     <div class="row">
 
@@ -48,7 +48,7 @@
 
   
 
-    <form action="{{ route('doctorfiles.update',$doctorfile->id) }}" method="POST">
+    <form action="{{ route('companyfiles.update',$companyfile->id) }}" method="POST">
 
         @csrf
 
@@ -62,21 +62,9 @@
 
                 <div class="form-group">
 
-                    <strong>Doctor Code:</strong>
+                    <strong>HMO Code:</strong>
 
-                    <input type="text" name="doctors_code" value="{{ $doctorfile->doctors_code }}" class="form-control" placeholder="Doctors_code">
-
-                </div>
-
-            </div>
-
-            <div class="col-xs-8 col-sm-8 col-md-8">
-
-                <div class="form-group">
-
-                    <strong>Last Name:</strong>
-
-                    <input type="string" name="last_name" value="{{ $doctorfile->last_name }}" class="form-control" placeholder="Last_name">
+                    <input type="text" name="hmo_code" value="{{ $companyfile->hmo_code }}" class="form-control" placeholder="Enter Code">
 
                 </div>
 
@@ -86,21 +74,9 @@
 
                 <div class="form-group">
 
-                    <strong>First Name:</strong>
+                    <strong>HMO Description:</strong>
 
-                    <input type="string" name="first_name" value="{{ $doctorfile->first_name }}" class="form-control" placeholder="First_name">
-
-                </div>
-
-            </div>
-
-            <div class="col-xs-8 col-sm-8 col-md-8">
-
-                <div class="form-group">
-
-                    <strong>Middle Initial:</strong>
-
-                    <input type="string" name="middle_initial" value="{{ $doctorfile->middle_initial }}" class="form-control" placeholder="Middle_initial">
+                    <input type="string" name="hmo_desc" value="{{ $companyfile->hmo_desc }}" class="form-control" placeholder="Enter Description">
 
                 </div>
 
@@ -110,9 +86,33 @@
 
                 <div class="form-group">
 
-                    <strong>Specialty:</strong>
+                    <strong>HMO SFX:</strong>
 
-                    <input type="text" name="specialty" value="{{ $doctorfile->specialty }}" class="form-control" placeholder="Specialty">
+                    <input type="string" name="hmo_sfx" value="{{ $companyfile->hmo_sfx }}" class="form-control" placeholder="Enter Input">
+
+                </div>
+
+            </div>
+
+            <div class="col-xs-8 col-sm-8 col-md-8">
+
+                <div class="form-group">
+
+                    <strong>HMO Status:</strong>
+
+                    <input type="string" name="hmo_status" value="{{ $companyfile->hmo_status }}" class="form-control" placeholder="Enter Status">
+
+                </div>
+
+            </div>
+
+            <div class="col-xs-8 col-sm-8 col-md-8">
+
+                <div class="form-group">
+
+                    <strong>Credit Limit:</strong>
+
+                    <input type="text" name="credit_limit" value="{{ $companyfile->credit_limit }}" class="form-control" placeholder="Enter Limit">
 
                 </div>
 
